@@ -16,6 +16,20 @@
 This repository hosts the installer downloads. Each release has the installer, its SHA-256 checksum,
 and a list of what changed.
 
+## Screenshots
+
+**Distros:** start, stop and open every distro from one list.
+
+![Distros page: each distro has Terminal, Desktop and Start buttons](assets/screenshot-distros.png)
+
+**Tools:** one-click developer tools, disk, network, GPU and USB for the distro you pick.
+
+![Tools page: developer tool profiles such as Go, Rust, Java and GPU support, each with an Install button](assets/screenshot-tools.png)
+
+**About:** the version, the update check, and what changed in each release.
+
+![About page: version 1.4.0, the developer credit and the update log](assets/screenshot-about.png)
+
 ## Download
 
 Get `WslDeskManager-Setup-<version>.exe` from the
@@ -74,7 +88,7 @@ Work on one distro at a time, from its **More** menu or the Tools page.
 | Tool | What it does |
 |---|---|
 | **Open and update** | Open the distro in File Explorer, VS Code or Windows Terminal. Check its packages for updates and install them (apt, dnf, zypper, pacman, apk). |
-| **Developer tools** | One-click profiles for apt and dnf distros: Essentials, Python, Node.js, Go, Rust, Java, **Podman** (rootless, no daemon) and **Docker Engine** (the daemon inside the distro, started by systemd). Docker Desktop is left alone, and the page warns if it is installed, because the two can conflict. |
+| **Developer tools** | One-click profiles for apt and dnf distros: Essentials, Python, Node.js, Go, Rust, Java, **GPU support** (OpenGL and Vulkan on your PC's GPU through WSLg; CUDA is not included), **Podman** (rootless, no daemon) and **Docker Engine** (the daemon inside the distro, started by systemd). Docker Desktop is left alone, and the page warns if it is installed, because the two can conflict. |
 | **Disk** | See how much space the distro uses against its disk file on Windows, give space back to Windows (trim and sparse mode), move the disk to another drive, or rename the distro. |
 | **Network** | See the distro's addresses and listening ports, open a port as `localhost`, or forward a port to your network with a Windows port proxy rule. |
 | **GPU and USB** | Check whether the distro sees your GPU and WSLg, and share, attach and detach USB devices through usbipd-win. |
@@ -84,7 +98,7 @@ A report you can copy for bug reports. Passwords and your Windows user name are 
 sent anywhere.
 
 ### Appearance and updates
-Light, dark, or the same as Windows. The app checks for a newer release in the background (at most once
+A navigation rail with an icon for every page, in light, dark, or the same as Windows. The app checks for a newer release in the background (at most once
 a day), verifies its SHA-256 checksum, and installs it in place.
 
 ## Requirements
